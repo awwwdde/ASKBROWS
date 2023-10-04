@@ -12,26 +12,24 @@ function Menu() {
           </a>
         </li>
         <li className={style.menu__listItem}>
-          <li className={style.menu__listItem}>
-            <a href="#" className={style.menu__listItemLink}>
-              Обо мне
-            </a>
-          </li>
-          <li className={style.menu__listItem}>
-            <a href="#" className={style.menu__listItemLink}>
-              Работы
-            </a>
-          </li>
-          <li className={style.menu__listItem}>
-            <a href="#" className={style.menu__listItemLink}>
-              Цены
-            </a>
-          </li>
-          <li className={style.menu__listItem}>
-            <a href="#" className={style.menu__listItemLink}>
-              Контакты
-            </a>
-          </li>
+          <a href="#" className={style.menu__listItemLink}>
+            Обо мне
+          </a>
+        </li>
+        <li className={style.menu__listItem}>
+          <a href="#" className={style.menu__listItemLink}>
+            Работы
+          </a>
+        </li>
+        <li className={style.menu__listItem}>
+          <a href="#" className={style.menu__listItemLink}>
+            Цены
+          </a>
+        </li>
+        <li className={style.menu__listItem}>
+          <a href="#" className={style.menu__listItemLink}>
+            Контакты
+          </a>
         </li>
       </ul>
     </div>

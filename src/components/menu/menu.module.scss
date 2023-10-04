@@ -1,0 +1,22 @@
+.menu {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+    gap: 55px;
+    &Item {
+      &Link {
+        font-size: 24px;
+        text-transform: uppercase;
+        mix-blend-mode: darken;
+        &:hover {
+          border-bottom: 2px solid;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-left {
+    max-width: 900px;
+    margin-left: 50px;
+  }
+  &__title {
+    font-size: 96px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    color: #afafaf;
+    font-size: 64px;
+    margin-bottom: 15px;
+  }
+  &__btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #a08d70;
+    padding: 8px 60px;
+    border: 2px solid #a08d70;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid #fff;
+    }
+  }
+}
