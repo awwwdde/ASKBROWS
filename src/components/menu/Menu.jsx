@@ -32,7 +32,7 @@ function Menu() {
             <Link
               onClick={() => onActive(id)}
               className={
-                isActive ? style.menu__listItemLink + ' ' + style.menu__listItemLink_active : style.menu__listItemLink
+                isActive ? style.menu__listLink + ' ' + style.menu__listLink_active : style.menu__listLink
               }
               to={path}
               key={id}

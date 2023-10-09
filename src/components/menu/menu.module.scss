@@ -8,9 +8,8 @@
   &__list {
     display: flex;
     gap: 55px;
-    &Item {
       &Link {
-        color: white;
+        color:#A08D70;
         opacity: 0.8;
         font-size: 24px;
         text-transform: uppercase;
@@ -19,7 +18,9 @@
         &_active {
           opacity: 1;
         }
+        &:nth-child(4), &:nth-child(5) {
+          color: #2B4162;
+        }
       }
-    }
   }
 }
