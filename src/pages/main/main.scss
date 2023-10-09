@@ -1,19 +1,26 @@
 .main {
+  background: url('../../graphics/images/main_bg.png') no-repeat center top / cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   &-left {
-    max-width: 900px;
+    position: relative;
     margin-left: 50px;
   }
+  &-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+  }
   &__title {
-    font-size: 96px;
+    font-size: 200px;
     text-transform: uppercase;
   }
   &__subtitle {
     color: #afafaf;
-    font-size: 64px;
+    font-size: 40px;
     margin-bottom: 15px;
   }
   &__btn {

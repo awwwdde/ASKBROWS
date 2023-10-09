@@ -2,6 +2,8 @@ import React from 'react';
 
 import './main.scss';
 
+import img from '../../graphics/images/main_img.png';
+
 function Main() {
   return (
     <div className="main">
@@ -11,7 +13,7 @@ function Main() {
         <button className="main__btn">Запись онлайн</button>
       </div>
       <div className="main-right">
-        <img src="" alt="" className="main-right__img" />
+        <img src={img} alt="" className="main-right__img" />
       </div>
     </div>
   );
