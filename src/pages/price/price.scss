@@ -1,0 +1,15 @@
+.price {
+  background: url('../../graphics/images/price_bg.png') no-repeat center top / cover;
+  min-height: 100vh;
+
+  &__title {
+    color: #a08d70;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+}

@@ -1,5 +1,6 @@
 .menu {
   position: absolute;
+  z-index: 5;
   left: 0;
   top: 40px;
   width: 100%;
@@ -8,19 +9,16 @@
   &__list {
     display: flex;
     gap: 55px;
-      &Link {
-        color:#A08D70;
-        opacity: 0.8;
-        font-size: 24px;
-        text-transform: uppercase;
-        text-align: center;
-        &:hover,
-        &_active {
-          opacity: 1;
-        }
-        &:nth-child(4), &:nth-child(5) {
-          color: #2B4162;
-        }
+    &Link {
+      color: #a08d70;
+      filter: drop-shadow(0px 0px 3px black);
+      opacity: 0.8;
+      font-size: 24px;
+      text-align: center;
+      &:hover,
+      &_active {
+        opacity: 1;
       }
+    }
   }
 }

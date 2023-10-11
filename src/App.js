@@ -5,6 +5,8 @@ import './graphics/styles/style.scss';
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
+import Price from './pages/price/Price';
+import Contacts from './pages/contacts/Contacts';
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/price" element={<Main />} />
-        <Route path="/contacts" element={<Main />} />
+        <Route path="/price" element={<Price />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </div>
   );
