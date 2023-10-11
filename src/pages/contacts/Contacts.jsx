@@ -50,9 +50,7 @@ function Contacts() {
           <div
             className={
               servicesActive
-                ? 'contacts__form-item contacts__form-services' +
-                  ' ' +
-                  'contacts__form-item contacts__form-services_active'
+                ? 'contacts__form-item contacts__form-services contacts__form-item contacts__form-services_active'
                 : 'contacts__form-item contacts__form-services'
             }
           >
@@ -73,7 +71,7 @@ function Contacts() {
               alt=""
               className={
                 servicesActive
-                  ? 'contacts__form-services-arrow' + ' ' + 'contacts__form-services-arrow_active'
+                  ? 'contacts__form-services-arrow contacts__form-services-arrow_active'
                   : 'contacts__form-services-arrow'
               }
             />
