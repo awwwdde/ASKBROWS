@@ -1,17 +1,10 @@
 import React from 'react';
-import Title from '../../components/title/Title';
 
 import './about.scss';
-
-import img from '../../graphics/images/about_img.png';
 
 function About() {
   return (
     <div className="about">
-      <Title>Немного информации обо мне</Title>
-      <div className="about__img">
-        <img src={img} alt="" />
-      </div>
       <p className="about__subtitle">
         Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
         используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное

@@ -27,7 +27,6 @@ function Price() {
   ];
   return (
     <div className="price">
-      <Title>Цены и список услуг</Title>
       <ul className="price__list">
         {cards.map(({ id, title, descr, price }) => {
           return <PriceItem key={id} title={title} descr={descr} price={price} />;

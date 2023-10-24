@@ -4,7 +4,6 @@ import Title from '../../components/title/Title';
 import './contacts.scss';
 
 import tg from '../../graphics/icons/Telegram.svg';
-import whatsapp from '../../graphics/icons/WhatsApp.svg';
 import vk from '../../graphics/icons/VK.svg';
 import inst from '../../graphics/icons/Instagram.svg';
 import arrow from '../../graphics/icons/arrow.svg';
@@ -32,9 +31,6 @@ function Contacts() {
           <div className="contacts__info-socials">
             <div className="contacts__left-socials-item">
               <img src={tg} alt="" />
-            </div>
-            <div className="contacts__left-socials-item">
-              <img src={whatsapp} alt="" />
             </div>
             <div className="contacts__left-socials-item">
               <img src={vk} alt="" />

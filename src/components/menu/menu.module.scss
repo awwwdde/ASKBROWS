@@ -4,20 +4,19 @@
   left: 0;
   top: 40px;
   width: 100%;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   &__list {
     display: flex;
     gap: 55px;
     &Link {
-      color: #a08d70;
-      filter: drop-shadow(0px 0px 3px black);
-      opacity: 0.8;
-      font-size: 24px;
-      text-align: center;
+      color: #fff;
+      font-size: 32px;
+      transition: 0.3s;
       &:hover,
       &_active {
-        opacity: 1;
+        color: #8e8e8e;
       }
     }
   }

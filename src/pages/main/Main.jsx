@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 import './main.scss';
 
-import img from '../../graphics/images/main_img.png';
-
 function Main() {
   const [modalActive, setModalActive] = useState(false);
 
@@ -11,9 +9,9 @@ function Main() {
     <div className="main">
       <div className="main__left">
         <h1 className="main__title">Askbrows</h1>
-        <p className="main__subtitle">Ламинирование & Окрашивания бровей</p>
+        <p className="main__subtitle">Ламинирование и окрашивания бровей</p>
         <button className="main__btn" onClick={() => setModalActive(!modalActive)}>
-          Запись онлайн
+          Записаться
         </button>
       </div>
       <div
@@ -31,9 +29,6 @@ function Main() {
           placeholder="Ваше сообщение..."
         ></textarea>
         <button className="main__modal-item main__modal-btn">Записаться</button>
-      </div>
-      <div className="main__right">
-        <img src={img} alt="" className="main-right__img" />
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
 import Price from './pages/price/Price';
 import Contacts from './pages/contacts/Contacts';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/price" element={<Price />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
