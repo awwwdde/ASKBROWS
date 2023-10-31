@@ -7,7 +7,8 @@
     margin: 0 auto;
     margin-top: 75px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
   }
 
@@ -29,10 +30,11 @@
   }
 
   &__form {
-    max-width: 50%;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: end;
+    max-width: 590px;
+    width: 100%;
     gap: 15px;
     &-item {
       width: 100%;
@@ -40,11 +42,11 @@
       border: none;
       border-radius: 25px;
       padding: 10px 30px;
-      color: #2b4162;
-      background-color: #a08d70;
+      color: #FFFFFF;
+      background-color: #474747;
       font-size: 20px;
       &::placeholder {
-        color: #2b4162;
+        color: #FFFFFF;
         text-transform: uppercase;
       }
     }
@@ -60,7 +62,7 @@
       &-title {
         display: block;
         user-select: none;
-        color: #2b4162;
+        color: #FFFFFF;
         cursor: pointer;
       }
 
@@ -68,9 +70,10 @@
         position: absolute;
         top: 15px;
         right: 30px;
+        pointer-events: none;
         transition: 0.3s;
         &_active {
-          transform: rotate(180deg);
+          transform: rotateX(180deg);
         }
       }
 
@@ -81,11 +84,12 @@
         gap: 10px;
         margin-top: 10px;
         &-item {
+          color: rgba(0, 0, 0, 0.5);
           cursor: pointer;
           transition: 0.3s;
           &:hover,
           &:active {
-            color: #2b4162;
+            color: #fff;
           }
         }
       }
@@ -97,6 +101,8 @@
     }
 
     &-btn {
+      width: auto;
+      padding: 10px 50px;
       cursor: pointer;
     }
   }

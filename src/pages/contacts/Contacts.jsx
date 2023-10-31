@@ -18,28 +18,8 @@ function Contacts() {
   ];
   return (
     <div className="contacts">
-      <Title>Контакты</Title>
+      <Title>Для вашего удобства, вы можете написать мне через форму обратной связи</Title>
       <div className="contacts__inner">
-        <div className="contacts__info">
-          <p className="contacts__info-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum pa
-          </p>
-          <div className="contacts__info-socials">
-            <div className="contacts__left-socials-item">
-              <img src={tg} alt="" />
-            </div>
-            <div className="contacts__left-socials-item">
-              <img src={vk} alt="" />
-            </div>
-            <div className="contacts__left-socials-item">
-              <img src={inst} alt="" />
-            </div>
-          </div>
-        </div>
         <form className="contacts__form">
           <input className="contacts__form-item" placeholder="Ваше имя" required type="text" name="name" />
           <input className="contacts__form-item" placeholder="Ваш номер телефона" required type="tel" name="tel" />
@@ -62,15 +42,14 @@ function Contacts() {
                 );
               })}
             </ul>
-            <img
-              src={arrow}
-              alt=""
-              className={
+            <svg className={
                 servicesActive
                   ? 'contacts__form-services-arrow contacts__form-services-arrow_active'
                   : 'contacts__form-services-arrow'
-              }
-            />
+              } xmlns="http://www.w3.org/2000/svg" width="31" height="19" viewBox="0 0 31 19" fill="none">
+              <path d="M27.5143 1.75L15.5 16.6138L3.48572 1.75L27.5143 1.75Z" stroke="white" stroke-width="3"/>
+            </svg>
+           
           </div>
           <textarea
             className="contacts__form-item contacts__form-text"
