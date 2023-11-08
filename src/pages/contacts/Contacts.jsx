@@ -10,6 +10,7 @@ import arrow from '../../graphics/icons/arrow.svg';
 
 function Contacts() {
   const [servicesActive, setServicesActive] = useState(false);
+  const [service, setService] = useState('');
 
   const services = [
     { id: 0, title: 'Комплекс окрашивания бровей' },
@@ -31,25 +32,42 @@ function Contacts() {
             }
           >
             <span className="contacts__form-services-title" onClick={() => setServicesActive(!servicesActive)}>
-              Выберите услугу
+              {!service ? 'Выберите услугу' : service}
             </span>
             <ul className="contacts__form-services-list">
               {services.map(({ id, title }) => {
                 return (
-                  <li key={id} className="contacts__form-services-list-item">
+                  <li
+                    key={id}
+                    className={
+                      service == title
+                        ? 'contacts__form-services-list-item contacts__form-services-list-item_acitve'
+                        : 'contacts__form-services-list-item'
+                    }
+                    onClick={() => {
+                      service == title ? setService('') : setService(title);
+                      setServicesActive(!servicesActive);
+                    }}
+                  >
                     {title}
                   </li>
                 );
               })}
             </ul>
-            <svg className={
+            <svg
+              className={
                 servicesActive
                   ? 'contacts__form-services-arrow contacts__form-services-arrow_active'
                   : 'contacts__form-services-arrow'
-              } xmlns="http://www.w3.org/2000/svg" width="31" height="19" viewBox="0 0 31 19" fill="none">
-              <path d="M27.5143 1.75L15.5 16.6138L3.48572 1.75L27.5143 1.75Z" stroke="white" stroke-width="3"/>
+              }
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="19"
+              viewBox="0 0 31 19"
+              fill="none"
+            >
+              <path d="M27.5143 1.75L15.5 16.6138L3.48572 1.75L27.5143 1.75Z" stroke="white" stroke-width="3" />
             </svg>
-           
           </div>
           <textarea
             className="contacts__form-item contacts__form-text"

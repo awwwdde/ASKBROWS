@@ -42,11 +42,11 @@
       border: none;
       border-radius: 25px;
       padding: 10px 30px;
-      color: #FFFFFF;
+      color: #ffffff;
       background-color: #474747;
       font-size: 20px;
       &::placeholder {
-        color: #FFFFFF;
+        color: #ffffff;
         text-transform: uppercase;
       }
     }
@@ -62,7 +62,7 @@
       &-title {
         display: block;
         user-select: none;
-        color: #FFFFFF;
+        color: #ffffff;
         cursor: pointer;
       }
 
@@ -88,7 +88,8 @@
           cursor: pointer;
           transition: 0.3s;
           &:hover,
-          &:active {
+          &:active,
+          &_acitve {
             color: #fff;
           }
         }
