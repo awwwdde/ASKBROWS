@@ -31,6 +31,7 @@
   position: fixed;
   z-index: 3;
   width: 100%;
+  display: none;
   @media (max-width: 973px) {
     display: block;
   }
