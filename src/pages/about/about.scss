@@ -5,13 +5,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 0 15px;
   &__subtitle {
     position: relative;
     max-width: 1030px;
-    padding: 0 20px;
     color: #fff;
     text-align: justify;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    min-height: calc(100vh - 117px);
+    padding-top: 70px;
+    padding-bottom: 130px;
   }
 }

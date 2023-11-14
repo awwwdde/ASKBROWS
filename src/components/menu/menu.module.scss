@@ -66,11 +66,9 @@
 
   &__list {
     position: absolute;
-
     left: 0;
     top: 0;
     background-color: #1b1b1b;
-    max-width: 430px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -87,9 +85,9 @@
 
     &Title {
       position: absolute;
-      top: 65px;
+      top: 10px;
       color: #323232;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 900;
       text-transform: uppercase;
     }

@@ -55,6 +55,7 @@ function Contacts() {
               })}
             </ul>
             <svg
+              onClick={() => setServicesActive(!servicesActive)}
               className={
                 servicesActive
                   ? 'contacts__form-services-arrow contacts__form-services-arrow_active'

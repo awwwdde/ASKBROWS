@@ -1,7 +1,19 @@
 .title {
-  padding-top: 185px;
+  padding: 185px 15px 0 15px;
   color: #fff;
   font-size: 40px;
   font-weight: 900;
   text-align: center;
+}
+
+@media (max-width: 973px) {
+  .title {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
 }
